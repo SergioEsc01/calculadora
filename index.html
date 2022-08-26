@@ -4,38 +4,38 @@
         <title>Calculadora con Javascript
         </title>
     <link type="text/css" href="style.css" rel="stylesheet">  
-    
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
     </head>
-    <body onload="init();">
+    <body>
 <div class="container">
 <div class="calculadora">
    <div class="display">
       <div id="valor-anterior"></div>
       <div id="valor-actual"></div>
    </div>
-   <td><button class="numero">7</button></td>
-   <td><button class="numero"id="ocho">8</button></td>
-   <td><button class="numero"id="nueve">9</button></td>
-   <td><button id="borrar">&larr;</button></td>
-   <td><button id="reset">C</button></td>
-   <td><button class="numero"id="cuatro">4</button></td>
-   <td><button class="numero"id="cinco">5</button></td>
-   <td><button class="numero"id="seis">6</button></td>
-   <td><button class="operador"id="multiplicacion">*</button></td>
-   <td><button class="operador"id="division">/</button></td>
-   <td><button class="numero"id="uno">1</button></td>
-   <td><button class="numero"id="dos">2</button></td>
-   <td><button class="numero"id="tres">3</button></td>
-   <td><button class="operador"id="suma">+</button></td>
-   <td><button class="operador"id="resta">-</button></td>
-   <td><button class="numero"id="cero">0</button></td>
-   <td><button id="igual">=</button></td>
-   <td><button class="numero"id=",">,</button></td>
-   <td><button class="operador"id="potencia">POT</button></td>
-   <td><button class="operador"id="exponenciales">EXP</button></td>
-
+   <button class="numero">7</button>
+   <button class="numero">8</button>
+   <button class="numero">9</button>
+   <button onclick="display.borrar()">Del</button>
+   <button onclick="display.borrarc()">C</button>
+   <button class="numero">4</button>
+   <button class="numero">5</button>
+   <button class="numero">6</button>
+   <button class="operador" value="multiplicacion">*</button>
+   <button class="operador" value="division">/</button>
+   <button class="numero">1</button>
+   <button class="numero">2</button>
+   <button class="numero">3</button>
+   <button class="operador" value="suma">+</button>
+   <button class="operador" value="resta">-</button>
+   <button class="numero">0</button>
+   <button >=</button>
+   <button class="numero"id=",">,</button>
+   <button class="operador" value="raiz">POT</button>
+   <button class="operador" value="exp">EXP</button>
 </div>
 </div>
-        <script src="funciones.js"></script>
     </body>
 </html>
