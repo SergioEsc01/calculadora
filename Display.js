@@ -27,7 +27,7 @@ class Display{
         this.tipooperacion=undefined;
         this.imprimirvalores();
     }
-    
+
     computar(tipo){
 this.tipooperacion !=='igual' && this.calcular();
 this.tipooperacion=tipo;
@@ -46,9 +46,10 @@ this.imprimirvalores();
         this.displayValorAnterior.textContent= `${this.valorAnterior} ${this.signos[this.tipooperacion] || ''} ` ;
     }
     calcular(){
-        const valorAnterior=parsefloat(this.valorAnterior);
-        const valorActual=parsefloat(this.valorActual);
-        if(isNaN(valorActual || valorAnterior))return
+        const valorAnterior = parseFloat(this.valorAnterior);
+        const valorActual=parseFloat(this.valorActual);
+
+        if( isNaN(valorActual) || isNaN(valorAnterior) )return
         this.valorActual=this.calculadora[this.tipooperacion](valorAnterior,valorActual);
     }
 }
