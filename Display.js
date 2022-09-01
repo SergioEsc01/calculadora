@@ -11,7 +11,8 @@ class Display{
             division:'/',
             multiplicacion:'x',
             resta:'-',
-            exp:'∧',
+            exp:'e',
+            raiz:'raiz',
 
         }
 
@@ -48,7 +49,7 @@ this.imprimirvalores();
     calcular(){
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual=parseFloat(this.valorActual);
-
+        
         if( isNaN(valorActual) || isNaN(valorAnterior) )return
         this.valorActual=this.calculadora[this.tipooperacion](valorAnterior,valorActual);
     }

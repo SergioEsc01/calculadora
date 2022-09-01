@@ -11,8 +11,8 @@ class Calculadora{
     division(num1,num2){
         return num1/num2;
     }
-    raiz(num1){
-        return Math.sqrt(num1);
+    raiz(num1,num2){
+        return Math.pow(num1, 1/num2);
     }
     exp(num1,num2){
         return Math.pow(num1, num2);
